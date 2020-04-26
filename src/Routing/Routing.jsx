@@ -44,7 +44,7 @@ const Routing = () => {
       <Route path="/facultyDashboard" component={FacultyMainPage} />
   
 
-      <Route exact path="/studentDashboard">
+      <Route path="/studentDashboard">
         <StudentMainPage />
       </Route>
 

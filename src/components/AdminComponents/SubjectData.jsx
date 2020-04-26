@@ -124,7 +124,7 @@ componentWillMount(){
 }
   render() {
     if (this.state.redirect) {
-      return <Redirect to="/login" />;
+     // return <Redirect to="/login" />;
     }
     let modal;
 

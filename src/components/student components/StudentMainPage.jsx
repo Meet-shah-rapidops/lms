@@ -19,6 +19,11 @@ import Forum from './Forum';
 import GeneralForum from './GeneralForum';
 import LessonForum from './LessonForum';
 import ForumThread from './ForumThread';
+import Assignment from './Assignment';
+import ExamWarning from './ExamWarning';
+import ExaminationPage from './ExaminationPage';
+import StudentExamSchedule from './StudentExamSchedule';
+import StudentMark from './StudentMark';
 
 export class StudentMainPage extends Component {
     render() {
@@ -39,6 +44,10 @@ export class StudentMainPage extends Component {
                                 <Route exact path="/studentDashboard/generalforum" component={GeneralForum} />
                                 <Route exact path="/studentDashboard/lessonforum" component={LessonForum} />
                                 <Route exact path="/studentDashboard/forumthread" component={ForumThread} />
+                                <Route exact path="/studentDashboard/assignment" component={Assignment} />
+                                <Route exact path="/studentDashboard/schedule" component={StudentExamSchedule} />
+                                <Route exact path="/studentDashboard/examWarning" component={ExamWarning} />
+                                <Route exact path="/studentDashboard/exam" component={ExaminationPage} />
                             </Switch>
                         
                     </EuiPageBody>
